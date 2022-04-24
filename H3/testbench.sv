@@ -1,8 +1,8 @@
 module voter_case_tb;
   reg [3:0] I_tb;
   wire [3:1]O_tb;
-  voter_case_design decoder_1(.I(I_tb), .O(O_tb));
-initial begin
+  voter_case_design decoder_1(.I_tb(I_tb), .O_tb(O_tb));
+initial beginhttps://github.com/edward88421/h3/blob/main/H3/testbench.sv
   #0 I_tb = 4'b0000;
   #10 I_tb = 4'b0001;
   #10 I_tb = 4'b0010;
